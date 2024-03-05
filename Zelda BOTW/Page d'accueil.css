@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('../Assets/Fond\ BOTW.jpg');
+    background-size: cover; /* Ajuste la taille de l'image pour couvrir toute la zone d'arrière-plan */
+    background-position: center; /* Centre l'image par rapport à la zone d'arrière-plan */
+    background-repeat: no-repeat; /* Évite la répétition de l'image */
+    height: 100vh; /* Utilise la hauteur complète de la fenêtre visible */
+    display: flex;
+}
+
+.header_bar {
+    position:absolute;
+    display: flex;
+    opacity: 40%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: black;
+    height: 60%;
+    width: 100%;
+}
+
+.opacity_bar {
+    position:absolute;
+    border: 0%;
+    display: flex;
+    opacity: 30%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    height: 6rem;
+    width: 100%;
+}
