@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../Assets/Fond\ the\ Witcher.png');
+    background-size: cover; /* Ajuste la taille de l'image pour couvrir toute la zone d'arrière-plan */
+    background-position: center; /* Centre l'image par rapport à la zone d'arrière-plan */
+    background-repeat: no-repeat; /* Évite la répétition de l'image */
+    height: 100vh; /* Utilise la hauteur complète de la fenêtre visible */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Couleur du texte pour assurer une bonne visibilité */
+    font-family: Arial, sans-serif;
+}
