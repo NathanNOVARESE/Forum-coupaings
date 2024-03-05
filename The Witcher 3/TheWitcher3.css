@@ -4,16 +4,37 @@
 }
 
 body {
-    margin: 0;
-    padding: 0;
     background-image: url('../Assets/Fond\ the\ Witcher.png');
     background-size: cover; /* Ajuste la taille de l'image pour couvrir toute la zone d'arrière-plan */
     background-position: center; /* Centre l'image par rapport à la zone d'arrière-plan */
     background-repeat: no-repeat; /* Évite la répétition de l'image */
     height: 100vh; /* Utilise la hauteur complète de la fenêtre visible */
     display: flex;
-    justify-content: center;
-    align-items: center;
     color: white; /* Couleur du texte pour assurer une bonne visibilité */
     font-family: Arial, sans-serif;
+}
+
+.rectangle_menu{
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 20rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.350), rgba(0,0,0,1),rgba(0, 0, 0, 1));
+    margin-left: 7rem;
+}
+
+.TheForum{
+    display: flex;
+    border: 8px red solid;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-left: 7rem;
+}
+
+.rectangle_menu .logo_witcher{
+    width: 10rem;
+    height: 10rem;
+    margin-top: 5rem;
 }
