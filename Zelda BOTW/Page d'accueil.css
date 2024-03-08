@@ -3,36 +3,119 @@
     padding: 0;
 }
 
-body {
+body, html {
     background-image: url('../Assets/Fond\ BOTW.jpg');
     background-size: cover; /* Ajuste la taille de l'image pour couvrir toute la zone d'arrière-plan */
     background-position: center; /* Centre l'image par rapport à la zone d'arrière-plan */
     background-repeat: no-repeat; /* Évite la répétition de l'image */
-    height: 100vh; /* Utilise la hauteur complète de la fenêtre visible */
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  .dégradé {
     display: flex;
-}
-
-.header_bar {
-    position:absolute;
-    display: flex;
-    opacity: 40%;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    height: 100%;
+  }
+  
+  .flex-item {
+    width: 100%;
+  }
+  
+  .flex-item:nth-child(1) {
+    opacity: 0.6;
+    flex-grow: 0.2;
+    background-color:black
+  }
+  
+  .flex-item:nth-child(2) {
+    opacity: 0.5;
+    flex-grow: 1;
+    background-color:black
+  }
+  
+  .flex-item:nth-child(3) {
+    opacity: 0.6;
+    flex-grow: 0.14;
     background-color: black;
-    height: 60%;
-    width: 100%;
+  }
+
+  body {
+    background-color: #f8fafc;
+    margin: 0;
+    padding: 0;
+    position: relative; /* Ajout de la position relative pour référence absolue */
 }
 
-.opacity_bar {
-    position:absolute;
-    border: 0%;
+.container {
+    position: absolute;
+    padding: 2rem;
+    height: 35rem;
+    width: 30rem;
+    right: 2rem;
+    top: 3rem;
+}
+
+.slider-wrapper {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  position: absolute; /* Modification de la position en absolue */
+  top: 50%;
+  right: 2%; /* Utilisation d'une valeur relative */
+  transform: translateY(-50%);
+}
+
+.slider {
+  display: flex;
+  width: 100%; /* Définit la largeur du slider à 100% de la largeur du conteneur */
+  height: 100%;
+  aspect-ratio: 16 / 9;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+  border-radius: 0.5rem;
+  -ms-overflow-style: none; /* Hide scrollbar IE and Edge */
+  scrollbar-width: none; /* Hide scrollbar Firefox */
+}
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+
+.slider img {
+  z-index: 1;
+  flex: 1 0 auto; /* Ajustement pour permettre le redimensionnement des images */
+  width: 100%; /* Définit la largeur de l'image à 100% du cadre */
+  height: 100%; /* Maintient le ratio hauteur/largeur */
+  scroll-snap-align: start;
+  object-fit: cover;
+}
+
+.slider-nav {
     display: flex;
-    opacity: 30%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: red;
-    height: 6rem;
-    width: 100%;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+    opacity: 1;
 }
