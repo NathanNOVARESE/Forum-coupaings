@@ -39,6 +39,7 @@ body {
     text-decoration: none;
     color: white;
     border: none;
+    font-size: 16px;
 }
 
 .trait {
@@ -79,7 +80,7 @@ body {
 .topics-menu {
     display: none;
     position: absolute;
-    background: rgba(0, 115, 255, 0.79);
+    background: rgba(0, 115, 255, 0.60);
     height: 20rem;
     width: 30rem;
     margin-top: 6rem;
@@ -92,7 +93,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 115, 255, 0.79);
+    background: rgba(0, 115, 255, 0.60);
     filter: blur(10px);
 
 }
@@ -101,7 +102,7 @@ body {
     display: none;
     position: absolute;
     width: 30rem;
-    top: 6rem;
+    top: 6.5rem;
     left: 18rem;
     color: white;
     text-align: center;
@@ -153,7 +154,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 115, 255, 0.79);
+    background: rgba(0, 115, 255, 0.60);
     filter: blur(10px);
     z-index: -1; /* Pour placer le pseudo-élément derrière le contenu textuel */
 }
@@ -201,7 +202,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 115, 255, 0.79);
+    background: rgba(0, 115, 255, 0.60);
     filter: blur(10px);
     z-index: -1;
 }
@@ -251,4 +252,32 @@ body {
     margin-top: 14rem;
     margin-left: 5rem;
     font-size: 30px;
+}
+
+.losange1 {
+    position: absolute;
+    z-index: 1;
+    top: 5.2rem;
+    left: 2.5rem;
+}
+
+.losange2 {
+    position: absolute;
+    z-index: 1;
+    top: 8rem;
+    left: 2.5rem;
+}
+
+.losange3 {
+    position: absolute;
+    z-index: 1;
+    top: 11rem;
+    left: 2.5rem;
+}
+
+.losange4 {
+    position: absolute;
+    z-index: 1;
+    top: 14rem;
+    left: 2.5rem;
 }
