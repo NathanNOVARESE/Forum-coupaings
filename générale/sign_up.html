@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Page_d'accueil.css">
+    <link rel="stylesheet" href="sign_up.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="opaque"></div>
 
     <div class="container">
         <div class="bubbles">
@@ -52,48 +51,25 @@
             <span style="--i:13;"></span>
             <span style="--i:28;"></span>
         </div>
-    </div>
 
-    <a class="forum" href="Page_d'accueil.html">
-        <h1>Forum</h1>
-    </a>
+        <div class="login">
+            <h1>Connexion</h1>
+            <div class="trait"></div>
+            <form>
+                <label for="email" class="input-label">Adresse e-mail</label><br>
+                <input type="email" id="email" name="email" class="input-field" placeholder="Entrez votre adresse e-mail"><br>
 
-    <button id="menuButtonJeux" class="menuButtonJeux">Jeux</button>
-<div id="menuJeux" class="menuJeux">
-    <div class="ButtonMenu">
-        <!-- Boutons de redirection -->
-        <div class="menu-buttons-jeux">
-            <button onclick="window.location.href='../Zelda BOTW/Zelda BOTW.html'">Zelda</button>
-            <button onclick="window.location.href='../Final Fantasy 7/ff7.html'">Final Fantasy 7</button>
-            <button onclick="window.location.href='../TheWitcher3/TheWitcher3.html'">The Witcher 3</button>
+                <label for="fname"  class="input-label">Identifiant</label><br>
+                <input type="text" id="fname" name="fname" class="input-field" placeholder="Entrer votre identifiant..."><br>
+
+                <label for="lname"> Mot de Passe</label><br>
+                <input type="password" id="lname" name="lname" placeholder="Entrer votre mot de passe..."><br><br>
+
+                <label for="lname">Confirmation du Mot de Passe</label><br>
+                <input type="password" id="lname" name="lname" placeholder="Entrer à nouveau votre mot de passe..."><br><br>
+                
+                <input type="submit" value="Connexion">
+                <p>Vous n'avez pas de compte ? <span class="signup-link"><a href="sign_up.html">Inscrivez-vous ici</a></span></p>
+            </form>
         </div>
     </div>
-</div>
-
-<button id="menuButtonTopics" class="menuButtonTopics">Topics</button>
-<div id="menuTopics" class="menuTopics">
-    <div class="ButtonMenu">
-        <!-- Boutons de redirection -->
-        <div class="menu-buttons-topics">
-            <div class="menu-buttons-topics-text">
-                <button onclick="window.location.href='../Zelda BOTW/'">Zelda</button>
-                <button onclick="window.location.href='page2.html'">Final Fantasy 7</button>
-                <button onclick="window.location.href='../TheWitcher3/TheWitcher3.html'">The Witcher 3</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-    <button class="menu-button a-propos" onclick="window.location.href='../générale/a_propos.html'">
-        A propos
-    </button>
-
-    <button class="menu-button contact" onclick="window.location.href='../générale/contact.html'">
-        Contact
-    </button>  
-
-
-    <script src="Page_d'accueil.js"></script>
-    
-</body>
-</html>
