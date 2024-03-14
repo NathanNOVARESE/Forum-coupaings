@@ -8,6 +8,26 @@
 </head>
 <body>
     <div class="opaque"></div>
+    <div class="telephone">
+        <img class="set" src="../Assets/set_contact/telephone.png" alt="telephone">
+        <h3 class="telephone_text">Contact par téléphone</h3>
+        <h2 class="telephone_text">+33 00 00 00 00 00</h2>
+    </div>
+
+    <div class="e-mail">
+        <img class="set2" src="../Assets/set_contact/e-mail.png">
+        <h3 class="e-mail_text">Contact par couriels</h3>
+        <h3 class="e-mail_text">xxxxxxx.xxxxxx@ynov.com</h3>
+    </div>
+
+
+
+    <div class="adresse"> 
+        <img class="set4" src="../Assets/set_contact/maps.png">
+        <h3 class="adresse_text">Nous trouver</h3>
+        <h2 class="adresse_text"> pl Sophie Laffitte,</h2>
+        <h2 class="adresse_text"> 06560 Valbonne </h2>
+    </div>
 
     <div class="container">
         <div class="bubbles">
@@ -54,46 +74,65 @@
         </div>
     </div>
 
-    <a class="forum" href="Page_d'accueil.html">
+    <a class="forum ButtonMenu" href="Page_d'accueil.html">
         <h1>Forum</h1>
     </a>
 
-    <button id="menuButtonJeux" class="menuButtonJeux">Jeux</button>
-<div id="menuJeux" class="menuJeux">
-    <div class="ButtonMenu">
-        <!-- Boutons de redirection -->
-        <div class="menu-buttons-jeux">
-            <button onclick="window.location.href='../Zelda BOTW/'">Zelda</button>
-            <button onclick="window.location.href='page2.html'">Final Fantasy 7</button>
-            <button onclick="window.location.href='../TheWitcher3/TheWitcher3.html'">The Witcher 3</button>
-        </div>
-    </div>
-</div>
-
-<button id="menuButtonTopics" class="menuButtonTopics">Topics</button>
-<div id="menuTopics" class="menuTopics">
-    <div class="ButtonMenu">
-        <!-- Boutons de redirection -->
-        <div class="menu-buttons-topics">
-            <div class="menu-buttons-topics-text">
+    <button id="menuButtonJeux" class="menuButtonJeux ButtonMenu">Jeux</button>
+    <div id="menuJeux" class="menuJeux">
+        <div class="ButtonMenu">
+            <!-- Boutons de redirection -->
+            <div class="menu-buttons-jeux">
                 <button onclick="window.location.href='../Zelda BOTW/'">Zelda</button>
                 <button onclick="window.location.href='page2.html'">Final Fantasy 7</button>
                 <button onclick="window.location.href='../TheWitcher3/TheWitcher3.html'">The Witcher 3</button>
             </div>
         </div>
     </div>
-</div>
 
-    <button class="menu-button a-propos" onclick="window.location.href='../générale/a_propos.html'">
-        A propos
-    </button>
+    <button id="menuButtonTopics" class="menuButtonTopics ButtonMenu">Topics</button>
+    <div id="menuTopics" class="menuTopics">
+        <div class="ButtonMenu">
+            <!-- Boutons de redirection -->
+            <div class="menu-buttons-topics">
+                <div class="menu-buttons-topics-text">
+                    <button onclick="window.location.href='../Zelda BOTW/'">Zelda</button>
+                    <button onclick="window.location.href='page2.html'">Final Fantasy 7</button>
+                    <button onclick="window.location.href='../TheWitcher3/TheWitcher3.html'">The Witcher 3</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <button class="menu-button contact" onclick="window.location.href='../générale/contact.html'">
-        Contact
-    </button>  
+        <button class="menu-button a-propos ButtonMenu" onclick="window.location.href='../générale/a_propos.html'">
+            A propos
+        </button>
+
+        <button class="menu-button contact ButtonMenu" onclick="window.location.href='../générale/contact.html'">
+            Contact
+        </button> 
+
+        <button class="menu-button profil " onclick="window.location.href='../générale/profil.html'">
+            <div class="profil_img"></div>
+            profil
+        </button>
+        
 
 
-    <script src="Page_d'accueil.js"></script>
+        <div id="map" class="maps">
+        </div>
+
+    <script>
+        (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
+            key: "AIzaSyDHdkjvSTPOEOZ7aR4tFBwrZQ3PZ9fbM70",
+            v: "weekly",
+            // Use the 'v' parameter to indicate the version to use (weekly, beta, alpha, etc.).
+            // Add other bootstrap parameters as needed, using camel case.
+        });
+    </script>
+
+
+    <script src="contact.js"></script>
     
 </body>
 </html>
