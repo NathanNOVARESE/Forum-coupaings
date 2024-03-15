@@ -16,12 +16,91 @@ body, html {
 
   .menu_bouton {
     display: flex;
-    justify-content: center; /* Alignement horizontal au centre */
-    align-items: center; /* Alignement vertical au centre */
-    height: 100%;
-    max-width: 80%; /* Limite la largeur de la div */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .menu-deroulant {
+    position: absolute;
+    top: 50%;
+    left: 27%;
+    transform: translate(-50%, -50%);
+    width: 23%;
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Styles pour le menu déroulant de Topics */
+  .Topics-menu-deroulant {
+    position: absolute;
+    top: 50%; /* Positionnement vertical au milieu */
+    left: 73%; /* Ajustement de la position horizontale */
+    transform: translate(-50%, -50%);
+    width: 23%;
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  @media only screen and (max-width: 768px) {
+    .menu_bouton {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .menu-deroulant {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+/* Ajouter une ligne entre chaque option */
+.menu-deroulant a {
+  margin: 5px 0; /* Espacement entre les éléments de menu */
+  padding: 10px; /* Ajoute un peu de marge intérieure aux éléments du menu */
+  color: #fff; /* Couleur du texte */
+  text-align: center; /* Centrer le texte horizontalement */
+  text-decoration: none; /* Supprime le soulignement des liens */
+  transition: border-bottom 0.3s; /* Transition douce pour le soulignement */
 }
 
+/* Souligner les options au survol */
+.menu-deroulant a:hover {
+  transition: border-bottom 0.3s; /* Transition douce pour le soulignement */
+}
+
+/* Réduire la longueur de la barre lors du survol */
+.menu-deroulant a:hover::after {
+  content: ""; /* Ajouter un contenu pseudo-élément */
+  display: block; /* Afficher en tant que bloc */
+  width: 50%; /* Réduire la largeur de la barre */
+  height: 2px; /* Hauteur de la barre */
+  background-color: #fff; /* Couleur de la barre */
+  margin: auto; /* Centrer horizontalement */
+}
+.menu-deroulant a {
+  margin: 5px 0; /* Espacement entre les éléments de menu */
+}
+
+/* Réduire la longueur de la barre lors du survol */
+.menu-deroulant a::after {
+  content: ""; /* Ajouter un contenu pseudo-élément */
+  display: block; /* Afficher en tant que bloc */
+  width: 0; /* Initialiser la largeur de la barre à zéro */
+  height: 2px; /* Hauteur de la barre */
+  background-color: #fff; /* Couleur de la barre */
+  margin: auto; /* Centrer horizontalement */
+  transition: width 0.3s; /* Ajouter une transition à la propriété width */
+}
+
+/* Augmenter la largeur de la barre lors du survol */
+.menu-deroulant a:hover::after {
+  width: 50%; /* Réduire la largeur de la barre */
+}
 
 .menu_bouton button {
   padding: 5px 10px; /* Ajustement de l'espace interne des boutons */
@@ -32,6 +111,7 @@ body, html {
   border: none; /* Suppression de la bordure */
   border-radius: 5px; /* Arrondi des coins */
 }
+
 
   .dégradé {
     display: flex;
@@ -223,3 +303,4 @@ body, html {
 .slider-nav a:hover {
     opacity: 1;
 }
+
