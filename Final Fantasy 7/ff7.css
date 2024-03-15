@@ -379,3 +379,31 @@ body {
     margin-left: 35rem;
 }
 
+.send_bar {
+    position: absolute;
+    border: 2px solid white;
+    padding: 10px;
+    width: 92%;
+    height: auto;
+    border-radius: 1.5REM;
+    bottom: 2rem;
+}
+
+.search-box {
+    width: 28rem;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 1rem;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
