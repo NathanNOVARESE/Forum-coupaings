@@ -9,6 +9,53 @@
 <body>
     <div class="opaque"></div>
 
+    <div class="description">
+        <h1 class="desc_text">Bonjour à tous,</h1>
+        <p class="desc_text desc_text1">
+            Nous sommes ravis de vous présenter notre projet étudiant qui vous plongera au cœur de cinq univers vidéoludiques immersifs et captivants. Notre objectif est de vous offrir une exploration approfondie de ces mondes virtuels, en mettant en lumière leurs mécaniques de jeu, leurs histoires riches et leurs univers fascinants.
+        </p>
+    </div>
+
+    <div class="vedette">
+        <h1 class="vedette_text">
+            Les Jeux En Vedette :
+        </h1>
+        <p class="vedette_text Zelda">
+            <strong>The Legend of Zelda: Breath of the Wild :</strong> Explorez les vastes plaines et les mystérieuses ruines d'Hyrule dans ce chef-d'œuvre de Nintendo. Découvrez les secrets de ce monde ouvert, maîtrisez les pouvoirs de Link et plongez dans une aventure épique où chaque décision compte.
+        </p>
+        <p class="vedette_text FF7">
+            <strong> Final Fantasy 7 :</strong> Rejoignez Cloud et son équipe dans leur lutte contre la sinistre Shinra Corporation. Plongez dans les rues animées de Midgar, découvrez ses secrets sombres et participez à des combats épiques dans ce RPG légendaire.
+        </p>
+
+        <p class="vedette_text TH3">
+            <strong> The Witcher 3 : Wild Hunt :</strong> Incarnez le sorceleur Geralt de Riv dans sa quête pour retrouver sa fille adoptive. Explorez un monde ouvert gigantesque rempli de monstres, de sorciers et de mystères. Vos choix auront un impact sur l'avenir de ce monde fantastique.
+        </p>
+
+        <p class="vedette_text YIW">
+            <strong> Yakuza: Infinite Wealth :</strong> Plongez dans les rues animées de Tokyo et incarnez un membre influent de la pègre japonaise. Explorez les intrigues politiques, participez à des mini-jeux délirants et découvrez les secrets de la famille Yakuza.
+        </p>
+
+        <p class="vedette_text TLOU2">
+            <strong> The Last of Us 2 :</strong> Explorez un monde post-apocalyptique où la survie est tout ce qui compte. Suivez Ellie dans sa quête de vengeance et découvrez les horreurs et les beautés de ce monde dévasté par une pandémie mortelle.
+        </p>
+    </div>
+
+    <div class="contributeur">
+        <h1 class="contributeur_text">Meufs des contributeurs</h1>
+    </div>
+
+    <div class="talia">
+        <img  class="talia_img" src="../Assets/photo/Talia.jpg">
+    </div>
+
+    <div class="nathalie">
+        <img class="nathalie_img" src="../Assets/photo/Nathalie.jpg">
+    </div>
+
+    <div class="orga">
+        <img class="orga_img" src="../Assets/photo/image-removebg-preview.png" alt="orga">
+    </div>
+
     <div class="container">
         <div class="bubbles">
             <span style="--i:11;"></span>
@@ -54,43 +101,48 @@
         </div>
     </div>
 
-    <a class="forum" href="Page_d'accueil.html">
+    <a class="forum ButtonMenu" href="Page_d'accueil.html">
         <h1>Forum</h1>
     </a>
 
-    <button id="menuButtonJeux" class="menuButtonJeux">Jeux</button>
-<div id="menuJeux" class="menuJeux">
-    <div class="ButtonMenu">
-        <!-- Boutons de redirection -->
-        <div class="menu-buttons-jeux">
-            <button onclick="window.location.href='../Zelda BOTW/'">Zelda</button>
-            <button onclick="window.location.href='page2.html'">Final Fantasy 7</button>
-            <button onclick="window.location.href='../TheWitcher3/TheWitcher3.html'">The Witcher 3</button>
-        </div>
-    </div>
-</div>
-
-<button id="menuButtonTopics" class="menuButtonTopics">Topics</button>
-<div id="menuTopics" class="menuTopics">
-    <div class="ButtonMenu">
-        <!-- Boutons de redirection -->
-        <div class="menu-buttons-topics">
-            <div class="menu-buttons-topics-text">
+    <button id="menuButtonJeux" class="menuButtonJeux ButtonMenu">Jeux</button>
+    <div id="menuJeux" class="menuJeux">
+        <div class="ButtonMenu">
+            <!-- Boutons de redirection -->
+            <div class="menu-buttons-jeux">
                 <button onclick="window.location.href='../Zelda BOTW/'">Zelda</button>
                 <button onclick="window.location.href='page2.html'">Final Fantasy 7</button>
                 <button onclick="window.location.href='../TheWitcher3/TheWitcher3.html'">The Witcher 3</button>
             </div>
         </div>
     </div>
-</div>
 
-    <button class="menu-button a-propos" onclick="window.location.href='../générale/a_propos.html'">
-        A propos
-    </button>
+    <button id="menuButtonTopics" class="menuButtonTopics ButtonMenu">Topics</button>
+    <div id="menuTopics" class="menuTopics">
+        <div class="ButtonMenu">
+            <!-- Boutons de redirection -->
+            <div class="menu-buttons-topics">
+                <div class="menu-buttons-topics-text">
+                    <button onclick="window.location.href='../Zelda BOTW/'">Zelda</button>
+                    <button onclick="window.location.href='page2.html'">Final Fantasy 7</button>
+                    <button onclick="window.location.href='../TheWitcher3/TheWitcher3.html'">The Witcher 3</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <button class="menu-button contact" onclick="window.location.href='../générale/contact.html'">
-        Contact
-    </button>  
+        <button class="menu-button a-propos ButtonMenu" onclick="window.location.href='../générale/a_propos.html'">
+            A propos
+        </button>
+
+        <button class="menu-button contact ButtonMenu" onclick="window.location.href='../générale/contact.html'">
+            Contact
+        </button> 
+
+        <button class="menu-button profil " onclick="window.location.href='../générale/profil.html'">
+            <div class="profil_img"></div>
+            profil
+        </button>  
 
 
     <script src="Page_d'accueil.js"></script>
