@@ -235,8 +235,7 @@ body, html {
   margin-top: 15rem;
   position: absolute;
   z-index: 1;
-  width: rem;
-  height: ;
+
   display: grid;
   place-items: center;
 }
