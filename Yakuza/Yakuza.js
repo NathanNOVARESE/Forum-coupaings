@@ -59,3 +59,39 @@ document.addEventListener('click', function(event) {
     });
 });
 
+
+// Fonction pour activer/désactiver le menu déroulant et modifier le titre en conséquence
+function toggleMenu(menuId) {
+    const menuDeroulant = document.getElementById(menuId);
+    const allMenus = document.querySelectorAll('.menu-deroulant');
+    const titreTopic = document.querySelector('.titre_topic');
+
+    // Masquer tous les autres menus déroulants
+    allMenus.forEach(menu => {
+        if (menu.id !== menuId) {
+            menu.style.display = 'none';
+        }
+    });
+
+    // Modifier le titre en fonction du menu déroulant ouvert
+    if (menuId === 'topicsMenu') {
+        titreTopic.textContent = 'Topics';
+    } else if (menuId === 'gamesMenu') {
+        titreTopic.textContent = 'Jeux';
+    }
+
+    // Activer ou désactiver le menu déroulant cible
+    menuDeroulant.style.display = (menuDeroulant.style.display === 'flex') ? 'none' : 'flex';
+}
+
+// Masquer le menu déroulant lorsqu'on clique à l'extérieur
+document.addEventListener('click', function(event) {
+    const allMenus = document.querySelectorAll('.menu-deroulant');
+
+    allMenus.forEach(menu => {
+        const menuButton = document.querySelector(`.${menu.id.replace('Menu', '')}`);
+        if (!menuButton.contains(event.target) && !menu.contains(event.target)) {
+            menu.style.display = 'none';
+        }
+    });
+});
