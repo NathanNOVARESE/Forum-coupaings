@@ -68,7 +68,6 @@ body {
 .forum{
     color: white;
     position: absolute;
-    border: black 0.1px solid;
     width: 6rem;
     height: 2.2rem;
     z-index: 1;

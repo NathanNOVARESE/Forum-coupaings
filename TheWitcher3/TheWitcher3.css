@@ -338,6 +338,17 @@ body {
     margin-left: 45rem;
 }
 
+.titre {
+    position: absolute;
+    width: 24.5rem;
+    height: 4.5rem;
+    border: 5px solid blue;
+    margin-top: 0.5rem;
+    margin-left: 45rem;
+    text-align: center;
+}
+
+
 .send_bar {
     position: absolute;
     border: 2px solid white;
