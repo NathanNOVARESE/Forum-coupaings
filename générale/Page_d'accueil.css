@@ -71,7 +71,7 @@ body {
     width: 6rem;
     height: 2.2rem;
     z-index: 1;
-    margin-top: -44rem;
+    margin-top: -44.5rem;
     margin-left: 48%;
     text-decoration: none;
 }
@@ -102,8 +102,8 @@ body {
 .menuButtonJeux{
     position: absolute;
     border: red 5px solid;
-    margin-top: -42rem;
-    margin-left: 35%;
+    margin-top: -44rem;
+    margin-left: 10%;
     z-index: 5;
     color: white;
     background: none;
@@ -127,7 +127,7 @@ body {
     text-align: center;
     border: none;
     margin-top: -37rem;
-    margin-left: 29rem;
+    margin-left: 5.5rem;
     width: 10rem;
 }
 
@@ -183,7 +183,7 @@ body {
     position: relative; /* Change to relative */
     text-align: center;
     border: none;
-    margin-top: -37rem;
+    margin-top: -40rem;
     margin-left: 11rem;
     width: 10rem;
 }
@@ -227,8 +227,8 @@ body {
     border: none;
     cursor: pointer;
     display: flex;
-    margin-top: -42rem;
-    margin-left: 80%;
+    margin-top: -44rem;
+    margin-left: 68%;
     font-size: 20px;
 }
 
@@ -240,8 +240,8 @@ body {
     border: none;
     cursor: pointer;
     display: flex;
-    margin-top: -42rem;
-    margin-left: 65%;
+    margin-top: -44rem;
+    margin-left: 30%;
     font-size: 20px;
 }
 
@@ -250,10 +250,11 @@ body {
     width: 5rem;
     height: 5rem;
     border-radius: 5rem;
-    margin-top: -43.5rem;
-    margin-left: 93%;
+    margin-top: -46rem;
+    margin-left: 90%;
     z-index: 1;
     border: 5px solid rebeccapurple;
+    cursor: pointer;
 }
 
 .container2 {
